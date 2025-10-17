@@ -1,0 +1,12 @@
+{
+  "name": "@abztech/experiment",
+  "version": "0.0.1",
+  "description": "Experiment on NPM publishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arnaud Buchholz <arnaud.buchholz@free.fr>",
+  "license": "MIT"
+}
