@@ -22,17 +22,19 @@ jobs:
         with:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
-          # Enable OIDC token
-          token-format: 'id-token'
-          # Audience for the OIDC token
-          audience: 'https://registry.npmjs.org'
 
       # Ensure npm 11.5.1 or later is installed
       - name: Update npm
         run: npm install -g npm@latest
+
+      - uses: npm/setup-npm@v3
+        with:
+          token-type: 'id-token'
+          audience: 'https://registry.npmjs.org'
+        
       - run: npm install
       # - run: npm publish --access public
       - run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ steps.setup-node.outputs.token }}
+          NPM_TOKEN: ${{ steps.setup-npm.outputs.token }}
