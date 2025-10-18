@@ -3,13 +3,19 @@
   "version": "0.0.2",
   "description": "Experiment on NPM publishing",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "Arnaud Buchholz <arnaud.buchholz@free.fr>",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/ArnaudBuchholz/training-npm-publish"
+  },
+  "devDependencies": {
+    "semantic-release": "^25.0.0"
   }
 }
