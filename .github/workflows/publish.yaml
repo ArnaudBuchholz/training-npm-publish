@@ -27,14 +27,10 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
 
-      - uses: npm/setup-npm@v3
-        with:
-          token-type: 'id-token'
-          audience: 'https://registry.npmjs.org'
-        
       - run: npm install
-      # - run: npm publish --access public
+
       - run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ steps.setup-npm.outputs.token }}
+
+      - run: npm publish --access public
