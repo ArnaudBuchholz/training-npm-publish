@@ -1,6 +1,6 @@
 {
   "name": "@abztech/experiment",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Experiment on NPM publishing",
   "main": "index.js",
   "scripts": {
