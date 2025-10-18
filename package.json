@@ -14,7 +14,7 @@
   "author": "Arnaud Buchholz <arnaud.buchholz@free.fr>",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/ArnaudBuchholz/training-npm-publish"
+    "url": "git+https://github.com/ArnaudBuchholz/training-npm-publish.git"
   },
   "devDependencies": {
     "semantic-release": "^25.0.0"
