@@ -17,6 +17,7 @@
     "url": "git+https://github.com/ArnaudBuchholz/training-npm-publish.git"
   },
   "devDependencies": {
+    "@semantic-release/npm": "^13.1.0",
     "semantic-release": "^25.0.0"
   }
 }
